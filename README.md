@@ -8,3 +8,4 @@ This child theme contains a Cars custom post type with custom Vehicle Details cu
 
 1. ACF plugin - Download for free on [AdvancedCustomFields.com](https://www.advancedcustomfields.com/)
 2. [Twenty Nineteen theme](https://wordpress.org/themes/twentynineteen/) is installed on your site.
+3. [Download](https://github.com/colorful-tones/acf-demo-child-theme/archive/refs/tags/v.0.0.1.zip) and activate the ACF Demo child theme. Done.
