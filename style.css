@@ -1,0 +1,34 @@
+/**
+ * Theme Name: ACF Demo
+ * Description: A child theme of TwentyNineteen.
+ * Template: twentynineteen
+ * Text Domain: acf_demo
+ */
+
+@media only screen and (min-width: 768px) {
+	.site-header.featured-image {
+		min-height: 50vh;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	.image-filters-enabled .site-header.featured-image:after {
+		display: none;
+	}
+}
+
+.image-filters-enabled .site-header.featured-image .site-featured-image:before {
+	display: none;
+}
+
+.image-filters-enabled .site-header.featured-image .site-featured-image:after {
+	display: none;
+}
+
+.image-filters-enabled .site-header.featured-image .site-featured-image .post-thumbnail img {
+	filter: none;
+}
+
+.entry .entry-footer .edit-link {
+	display: none;
+}
