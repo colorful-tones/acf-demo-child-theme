@@ -2,6 +2,8 @@
 
 ## Description
 
+📹 [Check out the accompanying video on YouTube.](https://www.youtube.com/watch?v=EG4WcVeMU-0) 📹
+
 This child theme contains a Cars custom post type with custom Vehicle Details custom fields assigned. You can create a new car post type and fill in information for each car: price, mileage, miles per gallon. After saving your new car post type you can see the custom data output.
 
 ## Requirements
