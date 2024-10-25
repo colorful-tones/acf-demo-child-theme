@@ -22,8 +22,8 @@ $auto_mpg_city    = $auto_mpg['demo_city'];
 	<div class="entry-content">
 		<ul>
 			<li>Price: <?php echo esc_html( $auto_price ); ?></li>
-			<li>Mileage: <?php echo esc_html( $auto_price ); ?></li>
-			<li>MPG: <?php echo esc_html( $auto_mpg_highway ); ?> highway / <?php echo esc_html( $auto_mpg_highway ); ?> city</li>
+			<li>Mileage: <?php echo esc_html( $auto_mileage ); ?></li>
+			<li>MPG: <?php echo esc_html( $auto_mpg_city ); ?> highway / <?php echo esc_html( $auto_mpg_highway ); ?> city</li>
 		</ul>
 	</div><!-- .entry-content -->
 
