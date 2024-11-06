@@ -1,0 +1,48 @@
+<?php
+add_action('init', function () {
+	register_post_type('car', array(
+		'labels' => array(
+			'name' => 'Cars',
+			'singular_name' => 'Car',
+			'menu_name' => 'Cars',
+			'all_items' => 'All Cars',
+			'edit_item' => 'Edit Car',
+			'view_item' => 'View Car',
+			'view_items' => 'View Cars',
+			'add_new_item' => 'Add New Car',
+			'add_new' => 'Add New Car',
+			'new_item' => 'New Car',
+			'parent_item_colon' => 'Parent Car:',
+			'search_items' => 'Search Cars',
+			'not_found' => 'No cars found',
+			'not_found_in_trash' => 'No cars found in Trash',
+			'archives' => 'Car Archives',
+			'attributes' => 'Car Attributes',
+			'insert_into_item' => 'Insert into car',
+			'uploaded_to_this_item' => 'Uploaded to this car',
+			'filter_items_list' => 'Filter cars list',
+			'filter_by_date' => 'Filter cars by date',
+			'items_list_navigation' => 'Cars list navigation',
+			'items_list' => 'Cars list',
+			'item_published' => 'Car published.',
+			'item_published_privately' => 'Car published privately.',
+			'item_reverted_to_draft' => 'Car reverted to draft.',
+			'item_scheduled' => 'Car scheduled.',
+			'item_updated' => 'Car updated.',
+			'item_link' => 'Car Link',
+			'item_link_description' => 'A link to a car.',
+		),
+		'public' => true,
+		'show_in_rest' => true,
+		'menu_icon' => 'dashicons-car',
+		'supports' => array(
+			0 => 'title',
+			1 => 'thumbnail',
+		),
+		'has_archive' => 'cars',
+		'rewrite' => array(
+			'feeds' => false,
+		),
+		'delete_with_user' => false,
+	));
+});

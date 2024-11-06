@@ -1,0 +1,66 @@
+<?php
+add_action('init', function () {
+	register_taxonomy('make', array(
+		0 => 'car',
+	), array(
+		'labels' => array(
+			'name' => 'Makes',
+			'singular_name' => 'Make',
+			'menu_name' => 'Makes',
+			'all_items' => 'All Makes',
+			'edit_item' => 'Edit Make',
+			'view_item' => 'View Make',
+			'update_item' => 'Update Make',
+			'add_new_item' => 'Add New Make',
+			'new_item_name' => 'New Make Name',
+			'search_items' => 'Search Makes',
+			'popular_items' => 'Popular Makes',
+			'separate_items_with_commas' => 'Separate makes with commas',
+			'add_or_remove_items' => 'Add or remove makes',
+			'choose_from_most_used' => 'Choose from the most used makes',
+			'not_found' => 'No makes found',
+			'no_terms' => 'No makes',
+			'items_list_navigation' => 'Makes list navigation',
+			'items_list' => 'Makes list',
+			'back_to_items' => '← Go to makes',
+			'item_link' => 'Make Link',
+			'item_link_description' => 'A link to a make',
+		),
+		'public' => true,
+		'show_in_menu' => true,
+		'show_in_rest' => true,
+		'show_admin_column' => true,
+	));
+
+	register_taxonomy('manufacturer', array(
+		0 => 'car',
+	), array(
+		'labels' => array(
+			'name' => 'Manufacturers',
+			'singular_name' => 'Manufacturer',
+			'menu_name' => 'Auto Manufacturers',
+			'all_items' => 'All Auto Manufacturers',
+			'edit_item' => 'Edit Auto ',
+			'view_item' => 'View Auto ',
+			'update_item' => 'Update Auto ',
+			'add_new_item' => 'Add New Auto ',
+			'new_item_name' => 'New Auto	Name',
+			'parent_item' => 'Parent Auto ',
+			'parent_item_colon' => 'Parent Auto :',
+			'search_items' => 'Search Auto Manufacturers',
+			'not_found' => 'No auto manufacturers found',
+			'no_terms' => 'No auto manufacturers',
+			'filter_by_item' => 'Filter by auto ',
+			'items_list_navigation' => 'Auto Manufacturers list navigation',
+			'items_list' => 'Auto Manufacturers list',
+			'back_to_items' => '← Go to auto manufacturers',
+			'item_link' => 'Auto	Link',
+			'item_link_description' => 'A link to a auto ',
+		),
+		'public' => true,
+		'hierarchical' => true,
+		'show_in_menu' => true,
+		'show_in_rest' => true,
+		'show_admin_column' => true,
+	));
+});
